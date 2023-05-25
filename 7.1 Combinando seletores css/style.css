@@ -1,1 +1,36 @@
 /* Write your code here: */
+
+/*Exemplos de seletores combinados*/
+
+/* Aplly to both styles, can be more than two */
+
+h1,h2 {
+    color:blue;
+}
+
+/* Aplly to the selector child */
+
+.box > p {
+    color:blue;
+}
+/* 
+Descendant its like:
+.big p (Praticamente é mais específico)*/
+
+.box li {
+    color:blue;
+}
+
+/* Chaining = Apply where all selector are true * 
+Muito mais específico
+<h1 id="title" class="big-heading"> "Hello World" <h1/> */
+
+h1#title.big-heading{
+    color: blue;
+}
+
+/* Combining Combiners = combina tudo pra ficar super específico */
+
+ul p.done{
+    font-size:0.5rem;
+}
