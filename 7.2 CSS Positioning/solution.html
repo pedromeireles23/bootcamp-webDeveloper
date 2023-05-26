@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+    
+    /* Tipos de posicionamentos: Relative, Absolute,Fixed and Static Positioning
+    Z-index: Praticamente define quem vai sobrepor quem. O default é 0. 
+    static: default do html.
+    Relative: relativo de onde está posicionado ex: consegue mecher a "div" adicionando 50px top ou 50px bottom; 
+    Absolute: Fica de acordo com o seu ancestral, se estiver dentro de uma div é de acordo com ela. Se não fica posicionado
+    no topo da página. É necessário a div pai ter posicionamento relative.
+    Fixed: Relativo ao topo esquerdo do browser. De acordo quando navega na página ela continua presa.
+    Exemplo de um botão de wpp na maioria das páginas.  */
+
+    .red-circle {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+      top: 150px;
+      left: 250px;
+    }
+    
+    .blue-box {
+      background-color: blue;
+      width: 500px;
+      height: 300px;
+      position: relative;
+      top: 200px;
+      left: 200px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="blue-box">
+    <div class="red-circle"></div>
+  </div>
+</body>
+
+</html>
